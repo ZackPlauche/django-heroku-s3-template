@@ -63,7 +63,7 @@ WSGI_APPLICATION = 'config.wsgi.application'
 
 load_dotenv(find_dotenv())
 
-DATABASES = {'default': dj_database_url.config(default='sqlite3:///db.sqlite', conn_max_age=600)}
+DATABASES = {'default': dj_database_url.config(default='sqlite:///db.sqlite3', conn_max_age=600)}
 
 
 # Password validation
